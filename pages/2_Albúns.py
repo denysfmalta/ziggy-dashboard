@@ -75,7 +75,7 @@ album_image_urls = {
 years = df_data["album_release_year"].unique()
 
 # Cria a selectbox para selecionar o ano
-year_selection = st.sidebar.selectbox("Year", years)
+year_selection = st.sidebar.selectbox("Ano", years)
 
 # Filtra os álbums por ano de lançamento
 album_by_year = df_data[df_data["album_release_year"] == year_selection]
